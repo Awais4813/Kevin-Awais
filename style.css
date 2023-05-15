@@ -1,51 +1,107 @@
-@media only screen and (max-width: 815px){
+@media only screen and (max-width: 815px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        color: black;
+        width: 100%;
+        border-bottom: 2px solid black;
+        text-align: center;
+    }
+
+    .nav-link {
+        color: black;
+        display: inline-block;
+        margin: 10px 1rem;
+        text-decoration: none;
+        border: 2px solid black;
+        padding: 2px 5px;
+    }
+
+    #main-doc {
+        width: 100%;
+        padding-right: 20px;
+    }
 
 }
-*{
+
+@media only screen and (min-width: 815px) {
+    #navbar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 26vw;
+        border-right: 2px solid black;
+    }
+
+    #main-doc {
+        position: absolute;
+        right: 0;
+        width: 73%;
+        padding-right: 20px;
+    }
+
+    .nav-link {
+        border-top: 2px solid black;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .nav-link:last-child {
+        border-bottom: 2px solid black;
+    }
+}
+
+* {
     margin: 0;
     padding: 0;
 }
-#navbar{
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;  
-    width: 15%;  
-    border-right: 2px solid black;
-}
-#main-doc{
-    position: absolute;
-    right: 0;
-    width: 83%;
-    padding-right: 20px;
-}
-.nav-link{
-    border-top: 2px solid black;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-}
-.nav-link:last-child{
-    border-bottom: 2px solid black;
-}
-#navbar>header>h1{
+
+
+
+#navbar>header>h1 {
     font-size: 40px;
+    text-align: center;
+    /* font-size: 2rem; */
     padding: 20px;
-} 
-.main-section{
-    margin: 30px;
-}
-.main-section>header>h2{
-    margin-bottom: 20px;
 }
 
-div{
-    width: 100%; 
-    background-color:   rgb(0, 21, 6);
+.main-section {
+    margin: 30px;
+
+}
+
+.main-section>header>h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.main-section>p {
+    font-size: 17px;
+}
+
+.main-section>li {
+    font-size: 17px;
+}
+
+.main-section>div {
+    font-size: 16px;
+}
+
+div {
+    width: 100%;
+    background-color: rgb(0, 21, 6);
     color: yellow;
     padding: 20px;
 }
-
